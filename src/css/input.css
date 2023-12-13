@@ -9,16 +9,16 @@
 }
 @layer components {
   .padding__block {
-    @apply pt-[80px] pb-[80px] md:pt-[50px] smd:pb-[50px] sm:pt-[40px] sm:pb-[40px];
+    @apply smd:pb-[50px] pb-[80px] pt-[80px] md:pt-[50px] sm:pb-[40px] sm:pt-[40px];
   }
   .button__hover {
     @apply bg-[#0bafc8] hover:bg-[#8ccfa2];
   }
   .section__title {
-    @apply font-semibold text-[44px] leading-normal tracking-[-0.0002em] md:text-4xl sm:text-3xl;
+    @apply text-[44px] font-semibold leading-normal tracking-[-0.0002em] md:text-4xl sm:text-3xl;
   }
   .tab-trigger.active {
-    @apply text-blueviolet border-b border-b-blueviolet pb-3;
+    @apply border-b border-b-blueviolet pb-3 text-blueviolet;
   }
   .accordion__item.active > .accordion__content {
     @apply block;

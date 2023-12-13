@@ -35,6 +35,11 @@ module.exports = {
       animation: {
         fadeIn: ".8s fade-in ease-in-out",
       },
+
+      gridTemplateColumns: {
+        "auto-fill-minmax": "repeat(auto-fit, minmax(250px, 1fr))",
+      },
     },
   },
+  plugins: [],
 };
