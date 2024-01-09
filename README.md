@@ -1,5 +1,5 @@
 # Tailwind-website
-## https://lelyaler.github.io/tailwind-website/
+## https://lelyaler.github.io/tailwind-site/
 
 ### 💻 About :
 
