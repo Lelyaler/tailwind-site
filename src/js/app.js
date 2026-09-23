@@ -3,20 +3,30 @@ function toggleMenu() {
   const menu = document.querySelector('#mobail-menu');
   const body = document.querySelector('body');
 
+  if (!burger || !menu) return;
+
+  burger.setAttribute('aria-expanded', 'false');
+
   burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
+    const isExpanded = burger.classList.toggle('active');
+    burger.setAttribute('aria-expanded', String(isExpanded));
     menu.classList.toggle('hidden');
     menu.classList.toggle('flex');
     body.classList.toggle('overflow-hidden');
   });
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 767.999) {
-      menu.classList.add('hidden');
-      menu.classList.remove('flex');
-      burger.classList.remove('active');
-      body.classList.remove('overflow-hidden');
-    }
-  });
+  window.addEventListener(
+    'resize',
+    () => {
+      if (window.innerWidth > 767.999) {
+        menu.classList.add('hidden');
+        menu.classList.remove('flex');
+        burger.classList.remove('active');
+        burger.setAttribute('aria-expanded', 'false');
+        body.classList.remove('overflow-hidden');
+      }
+    },
+    { passive: true },
+  );
 }
 toggleMenu();
 // Tabs
