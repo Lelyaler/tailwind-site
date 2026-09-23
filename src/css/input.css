@@ -9,10 +9,10 @@
 }
 @layer components {
   .padding__block {
-    @apply smd:pb-[50px] pb-[80px] pt-[80px] md:pt-[50px] sm:pb-[40px] sm:pt-[40px];
+    @apply pb-[80px] pt-[80px] md:pb-[50px] md:pt-[50px] sm:pb-[40px] sm:pt-[40px];
   }
   .button__hover {
-    @apply bg-[#0bafc8] hover:bg-[#8ccfa2];
+    @apply bg-[#077a8c] hover:bg-[#066978];
   }
   .section__title {
     @apply text-[44px] font-semibold leading-normal tracking-[-0.0002em] md:text-4xl sm:text-3xl;

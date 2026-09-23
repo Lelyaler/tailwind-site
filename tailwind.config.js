@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: ["./index.html", "./src/**/*.{html,js}"],
   theme: {
     screens: {
       lg: { max: "1199.99px" },
@@ -19,7 +19,7 @@ module.exports = {
           "linear-gradient(90deg, #fddfa5,#c7d99a,#8ccfa2,#4ec1b6,#0bafc8)",
       },
       colors: {
-        blueviolet: "#0bafc8",
+        blueviolet: "#077a8c",
         lightgray: "#666768",
       },
       keyframes: {
