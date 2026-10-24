@@ -499,7 +499,7 @@ function openCourseModal(course) {
   if (instructorEl) instructorEl.textContent = course.instructor;
   if (instructorRoleEl) instructorRoleEl.textContent = course.instructorRole;
   if (ratingEl)
-    ratingEl.textContent = `★ ${course.rating} (${course.ratingCount} student reviews)`;
+    ratingEl.textContent = `${course.rating} (${course.ratingCount} student reviews)`;
   if (summaryEl) summaryEl.textContent = course.summary;
   if (priceEl) priceEl.textContent = `$${course.price.toFixed(2)}`;
   if (oldPriceEl) oldPriceEl.textContent = `$${course.oldPrice.toFixed(2)}`;
@@ -706,7 +706,7 @@ function initCart() {
       if (code === 'EDUFREEE20' || code === 'SAVE20') {
         window._promoDiscount = 0.2;
         updateCartUI();
-        showToast('🎉 Promo code applied! 20% discount activated.', 'success');
+        showToast('Promo code applied! 20% discount activated.', 'success');
         promoInput.disabled = true;
         promoBtn.textContent = 'Applied';
         promoBtn.disabled = true;
@@ -827,7 +827,7 @@ function initNewsletter() {
       return;
     }
 
-    showToast('🎉 Subscribed! Check your inbox for the free learning guide.', 'success');
+    showToast('Subscribed! Check your inbox for the free learning guide.', 'success');
     input.value = '';
   });
 }
