@@ -46,8 +46,15 @@
   <body class="bg-white text-slate-800">
     <!-- Main Hero Section -->
     <section
-      class="rounded-br-[200px] bg-heroGradient md:rounded-br-[150px] sm:rounded-br-[80px]"
+      class="relative overflow-hidden rounded-br-[200px] bg-heroGradient md:rounded-br-[150px] sm:rounded-br-[80px]"
     >
+      <!-- Ambient Glow Accents -->
+      <div
+        class="pointer-events-none absolute -right-24 top-16 h-[520px] w-[520px] rounded-full bg-cyan-400/20 blur-3xl"
+      ></div>
+      <div
+        class="pointer-events-none absolute -top-20 left-1/4 h-[450px] w-[450px] rounded-full bg-indigo-500/25 blur-3xl"
+      ></div>
       <header
         id="site-header"
         class="sticky top-0 z-40 pt-[35px] transition-all duration-300"
