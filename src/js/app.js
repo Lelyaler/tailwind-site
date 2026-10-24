@@ -68,25 +68,11 @@ function initStickyHeader() {
   if (!headerWrapper) return;
 
   function update() {
-    if (window.scrollY > 25) {
-      headerWrapper.classList.add(
-        'backdrop-blur-xl',
-        'bg-slate-950/85',
-        'shadow-md',
-        'border-b',
-        'border-white/10',
-        'py-3.5',
-      );
+    if (window.scrollY > 20) {
+      headerWrapper.classList.add('is-scrolled');
       headerWrapper.classList.remove('py-5');
     } else {
-      headerWrapper.classList.remove(
-        'backdrop-blur-xl',
-        'bg-slate-950/85',
-        'shadow-md',
-        'border-b',
-        'border-white/10',
-        'py-3.5',
-      );
+      headerWrapper.classList.remove('is-scrolled');
       headerWrapper.classList.add('py-5');
     }
   }

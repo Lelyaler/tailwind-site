@@ -45,6 +45,17 @@
     @apply border-teal-500/40 ring-1 ring-teal-500/20 bg-teal-50/20;
   }
 
+  /* Sticky Header on Scroll */
+  #site-header.is-scrolled {
+    background-color: rgba(5, 46, 36, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   /* Light Sheen Effect on Hover */
   .btn-shine {
     position: relative;
