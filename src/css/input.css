@@ -3,27 +3,38 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
-    @apply font-poppins;
+    @apply font-poppins text-slate-800 antialiased;
+  }
+  dialog::backdrop {
+    background-color: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(4px);
   }
 }
+
 @layer components {
   .padding__block {
     @apply pb-[80px] pt-[80px] md:pb-[50px] md:pt-[50px] sm:pb-[40px] sm:pt-[40px];
   }
   .button__hover {
-    @apply bg-[#077a8c] hover:bg-[#066978];
+    @apply bg-[#077a8c] hover:bg-[#066978] transition-colors duration-200;
   }
   .section__title {
-    @apply text-[44px] font-semibold leading-normal tracking-[-0.0002em] md:text-4xl sm:text-3xl;
+    @apply text-[40px] font-bold leading-tight tracking-tight text-slate-900 md:text-3xl sm:text-2xl;
+  }
+  .tab-trigger {
+    @apply relative pb-3 text-[15px] font-medium text-slate-500 transition-colors hover:text-slate-900 cursor-pointer;
   }
   .tab-trigger.active {
-    @apply border-b border-b-blueviolet pb-3 text-blueviolet;
+    @apply text-[#077a8c] font-semibold border-b-2 border-[#077a8c];
   }
   .accordion__item.active > .accordion__content {
     @apply block;
   }
   .accordion__item.active .accordion__img {
-    @apply rotate-180;
+    @apply rotate-90 text-[#077a8c];
   }
 }
