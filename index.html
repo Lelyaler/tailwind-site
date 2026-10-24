@@ -44,215 +44,215 @@
   </head>
 
   <body class="bg-white text-slate-800">
+    <!-- Sticky Site Header -->
+    <header
+      id="site-header"
+      class="fixed left-0 right-0 top-0 z-50 py-5 transition-all duration-300"
+    >
+      <div
+        class="mx-auto flex max-w-[1440px] items-center justify-between px-6 lg:px-5"
+      >
+        <!-- Logo -->
+        <a
+          href="#"
+          class="z-[1] flex items-center gap-2.5 text-white"
+          aria-label="Edufree Academy Homepage"
+        >
+          <span
+            class="flex h-9 w-9 items-center justify-center rounded-xl bg-white/20 shadow-sm backdrop-blur-md"
+          >
+            <svg
+              class="h-5 w-5 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path
+                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+              />
+            </svg>
+          </span>
+          <span class="text-xl font-bold tracking-tight text-white"
+            >Edufree<span class="text-amber-200">.</span></span
+          >
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="sm:hidden" aria-label="Main Navigation">
+          <ul class="flex items-center gap-[30px]">
+            <li>
+              <a
+                class="relative text-[15px] font-medium leading-[22px] text-white/90 transition-colors after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:text-white hover:after:scale-100"
+                href="#courses"
+                >Courses</a
+              >
+            </li>
+            <li>
+              <a
+                class="relative text-[15px] font-medium leading-[22px] text-white/90 transition-colors after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:text-white hover:after:scale-100"
+                href="#features"
+                >Why Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="relative text-[15px] font-medium leading-[22px] text-white/90 transition-colors after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:text-white hover:after:scale-100"
+                href="#platform"
+                >Platform</a
+              >
+            </li>
+            <li>
+              <a
+                class="relative text-[15px] font-medium leading-[22px] text-white/90 transition-colors after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:text-white hover:after:scale-100"
+                href="#faq"
+                >FAQ</a
+              >
+            </li>
+            <li>
+              <a
+                class="relative text-[15px] font-medium leading-[22px] text-white/90 transition-colors after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:text-white hover:after:scale-100"
+                href="#articles"
+                >Articles</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Header Right Actions -->
+        <div class="flex items-center gap-4">
+          <!-- Cart Button -->
+          <button
+            id="cart-trigger"
+            type="button"
+            class="btn-shine bg-white/15 group relative inline-flex items-center gap-2 rounded-xl border border-white/20 px-4 py-2 text-xs font-semibold text-white shadow-sm backdrop-blur-md transition-all duration-300 hover:border-white/40 hover:bg-white/25 active:scale-95"
+            aria-label="Open shopping cart"
+          >
+            <svg
+              class="h-4 w-4 transition-transform duration-300 group-hover:-rotate-12"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+              />
+            </svg>
+            <span>Cart</span>
+            <span
+              id="cart-badge"
+              class="flex hidden h-4 min-w-[16px] items-center justify-center rounded-full bg-amber-400 px-1 text-[10px] font-extrabold text-slate-950 shadow-sm"
+              >0</span
+            >
+          </button>
+
+          <!-- CTA Button -->
+          <a
+            href="#courses"
+            class="btn-shine group inline-flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-teal-400 via-cyan-400 to-sky-500 px-4 py-2 text-xs font-bold text-slate-950 shadow-md shadow-cyan-500/20 transition-all hover:scale-[1.03] hover:shadow-cyan-400/40 active:scale-95 md:hidden"
+          >
+            <span>Start Learning</span>
+            <svg
+              class="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              />
+            </svg>
+          </a>
+
+          <!-- Mobile Burger Button -->
+          <button
+            id="burger"
+            class="group relative hidden h-8 w-8 items-center justify-center rounded-lg bg-white/10 sm:flex"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Menu</span>
+            <div class="flex w-5 flex-col gap-1.5">
+              <span
+                class="h-0.5 w-full bg-white transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45"
+              ></span>
+              <span
+                class="h-0.5 w-full bg-white transition-opacity group-[.active]:opacity-0"
+              ></span>
+              <span
+                class="h-0.5 w-full bg-white transition-transform group-[.active]:-translate-y-2 group-[.active]:-rotate-45"
+              ></span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav
+      id="mobail-menu"
+      class="fixed inset-0 z-50 hidden animate-fadeIn flex-col items-center justify-center bg-slate-950/95 px-6 backdrop-blur-xl"
+      aria-label="Mobile Navigation"
+    >
+      <ul
+        class="flex flex-col items-center gap-6 text-center text-lg font-medium text-white"
+      >
+        <li>
+          <a class="transition-colors hover:text-[#0bafc8]" href="#courses"
+            >Courses</a
+          >
+        </li>
+        <li>
+          <a class="transition-colors hover:text-[#0bafc8]" href="#features"
+            >Why Choose Us</a
+          >
+        </li>
+        <li>
+          <a class="transition-colors hover:text-[#0bafc8]" href="#platform"
+            >Learning Platform</a
+          >
+        </li>
+        <li>
+          <a class="transition-colors hover:text-[#0bafc8]" href="#faq">FAQ</a>
+        </li>
+        <li>
+          <a class="transition-colors hover:text-[#0bafc8]" href="#articles"
+            >Latest Insights</a
+          >
+        </li>
+        <li class="pt-4">
+          <a
+            href="#courses"
+            class="inline-block rounded-xl bg-[#077a8c] px-6 py-3 text-base font-semibold text-white shadow-lg"
+            >Browse All Courses</a
+          >
+        </li>
+      </ul>
+    </nav>
+
     <!-- Main Hero Section -->
     <section
-      class="relative overflow-hidden rounded-br-[200px] bg-heroGradient md:rounded-br-[150px] sm:rounded-br-[80px]"
+      class="relative overflow-hidden rounded-br-[200px] bg-heroGradient pt-28 md:pt-24 sm:rounded-br-[80px]"
     >
       <!-- Ambient Glow Accents -->
       <div
-        class="pointer-events-none absolute -right-24 top-16 h-[520px] w-[520px] rounded-full bg-cyan-400/20 blur-3xl"
+        class="pointer-events-none absolute -right-24 top-16 h-[520px] w-[520px] rounded-full bg-cyan-300/30 blur-3xl"
       ></div>
       <div
-        class="pointer-events-none absolute -top-20 left-1/4 h-[450px] w-[450px] rounded-full bg-indigo-500/25 blur-3xl"
+        class="pointer-events-none absolute -top-20 left-1/4 h-[450px] w-[450px] rounded-full bg-indigo-300/25 blur-3xl"
       ></div>
-      <header
-        id="site-header"
-        class="sticky top-0 z-40 pt-[35px] transition-all duration-300"
-      >
-        <div
-          class="mx-auto flex max-w-[1440px] items-center justify-between px-6 lg:px-5"
-        >
-          <!-- Logo -->
-          <a
-            href="#"
-            class="z-[1] flex items-center gap-2.5 text-white"
-            aria-label="Edufree Academy Homepage"
-          >
-            <span
-              class="flex h-9 w-9 items-center justify-center rounded-xl bg-white/20 shadow-sm backdrop-blur-md"
-            >
-              <svg
-                class="h-5 w-5 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                <path
-                  d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                />
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                />
-              </svg>
-            </span>
-            <span class="text-xl font-bold tracking-tight text-white"
-              >Edufree<span class="text-amber-200">.</span></span
-            >
-          </a>
-
-          <!-- Desktop Navigation -->
-          <nav class="sm:hidden" aria-label="Main Navigation">
-            <ul class="flex items-center gap-[30px]">
-              <li>
-                <a
-                  class="relative text-[15px] font-medium leading-[22px] text-white/90 transition-colors after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:text-white hover:after:scale-100"
-                  href="#courses"
-                  >Courses</a
-                >
-              </li>
-              <li>
-                <a
-                  class="relative text-[15px] font-medium leading-[22px] text-white/90 transition-colors after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:text-white hover:after:scale-100"
-                  href="#features"
-                  >Why Us</a
-                >
-              </li>
-              <li>
-                <a
-                  class="relative text-[15px] font-medium leading-[22px] text-white/90 transition-colors after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:text-white hover:after:scale-100"
-                  href="#platform"
-                  >Platform</a
-                >
-              </li>
-              <li>
-                <a
-                  class="relative text-[15px] font-medium leading-[22px] text-white/90 transition-colors after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:text-white hover:after:scale-100"
-                  href="#faq"
-                  >FAQ</a
-                >
-              </li>
-              <li>
-                <a
-                  class="relative text-[15px] font-medium leading-[22px] text-white/90 transition-colors after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:text-white hover:after:scale-100"
-                  href="#articles"
-                  >Articles</a
-                >
-              </li>
-            </ul>
-          </nav>
-
-          <!-- Header Right Actions -->
-          <div class="flex items-center gap-4">
-            <!-- Cart Button -->
-            <button
-              id="cart-trigger"
-              type="button"
-              class="btn-shine bg-white/15 group relative inline-flex items-center gap-2 rounded-xl border border-white/20 px-4 py-2 text-xs font-semibold text-white shadow-sm backdrop-blur-md transition-all duration-300 hover:border-white/40 hover:bg-white/25 active:scale-95"
-              aria-label="Open shopping cart"
-            >
-              <svg
-                class="h-4 w-4 transition-transform duration-300 group-hover:-rotate-12"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                />
-              </svg>
-              <span>Cart</span>
-              <span
-                id="cart-badge"
-                class="flex hidden h-4 min-w-[16px] items-center justify-center rounded-full bg-amber-400 px-1 text-[10px] font-extrabold text-slate-950 shadow-sm"
-                >0</span
-              >
-            </button>
-
-            <!-- CTA Button -->
-            <a
-              href="#courses"
-              class="btn-shine group inline-flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-teal-400 via-cyan-400 to-sky-500 px-4 py-2 text-xs font-bold text-slate-950 shadow-md shadow-cyan-500/20 transition-all hover:scale-[1.03] hover:shadow-cyan-400/40 active:scale-95 md:hidden"
-            >
-              <span>Start Learning</span>
-              <svg
-                class="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2.5"
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
-                />
-              </svg>
-            </a>
-
-            <!-- Mobile Burger Button -->
-            <button
-              id="burger"
-              class="group relative hidden h-8 w-8 items-center justify-center rounded-lg bg-white/10 sm:flex"
-              aria-label="Toggle navigation menu"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Menu</span>
-              <div class="flex w-5 flex-col gap-1.5">
-                <span
-                  class="h-0.5 w-full bg-white transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45"
-                ></span>
-                <span
-                  class="h-0.5 w-full bg-white transition-opacity group-[.active]:opacity-0"
-                ></span>
-                <span
-                  class="h-0.5 w-full bg-white transition-transform group-[.active]:-translate-y-2 group-[.active]:-rotate-45"
-                ></span>
-              </div>
-            </button>
-          </div>
-        </div>
-      </header>
-
-      <!-- Mobile Navigation Drawer -->
-      <nav
-        id="mobail-menu"
-        class="fixed inset-0 z-50 hidden animate-fadeIn flex-col items-center justify-center bg-slate-950/95 px-6 backdrop-blur-xl"
-        aria-label="Mobile Navigation"
-      >
-        <ul
-          class="flex flex-col items-center gap-6 text-center text-lg font-medium text-white"
-        >
-          <li>
-            <a class="transition-colors hover:text-[#0bafc8]" href="#courses"
-              >Courses</a
-            >
-          </li>
-          <li>
-            <a class="transition-colors hover:text-[#0bafc8]" href="#features"
-              >Why Choose Us</a
-            >
-          </li>
-          <li>
-            <a class="transition-colors hover:text-[#0bafc8]" href="#platform"
-              >Learning Platform</a
-            >
-          </li>
-          <li>
-            <a class="transition-colors hover:text-[#0bafc8]" href="#faq"
-              >FAQ</a
-            >
-          </li>
-          <li>
-            <a class="transition-colors hover:text-[#0bafc8]" href="#articles"
-              >Latest Insights</a
-            >
-          </li>
-          <li class="pt-4">
-            <a
-              href="#courses"
-              class="inline-block rounded-xl bg-[#077a8c] px-6 py-3 text-base font-semibold text-white shadow-lg"
-              >Browse All Courses</a
-            >
-          </li>
-        </ul>
-      </nav>
 
       <!-- Hero Content -->
       <div
