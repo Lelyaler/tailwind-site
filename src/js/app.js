@@ -70,10 +70,22 @@ function initStickyHeader() {
   function update() {
     if (window.scrollY > 20) {
       headerWrapper.classList.add('is-scrolled');
-      headerWrapper.classList.remove('py-5');
+      headerWrapper.style.backgroundColor = 'rgba(5, 59, 45, 0.96)';
+      headerWrapper.style.backdropFilter = 'blur(16px)';
+      headerWrapper.style.webkitBackdropFilter = 'blur(16px)';
+      headerWrapper.style.boxShadow = '0 4px 20px -2px rgba(0, 0, 0, 0.28)';
+      headerWrapper.style.borderBottom = '1px solid rgba(255, 255, 255, 0.15)';
+      headerWrapper.style.paddingTop = '0.75rem';
+      headerWrapper.style.paddingBottom = '0.75rem';
     } else {
       headerWrapper.classList.remove('is-scrolled');
-      headerWrapper.classList.add('py-5');
+      headerWrapper.style.backgroundColor = '';
+      headerWrapper.style.backdropFilter = '';
+      headerWrapper.style.webkitBackdropFilter = '';
+      headerWrapper.style.boxShadow = '';
+      headerWrapper.style.borderBottom = '';
+      headerWrapper.style.paddingTop = '';
+      headerWrapper.style.paddingBottom = '';
     }
   }
 
