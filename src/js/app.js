@@ -46,7 +46,7 @@ function initMobileMenu() {
   window.addEventListener(
     'resize',
     () => {
-      if (window.innerWidth > 767.99 && burger.classList.contains('active')) {
+      if (window.innerWidth >= 768 && burger.classList.contains('active')) {
         closeMenu();
       }
     },

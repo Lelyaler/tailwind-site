@@ -17,13 +17,13 @@
 
 @layer components {
   .padding__block {
-    @apply pb-[80px] pt-[80px] md:pb-[50px] md:pt-[50px] sm:pb-[40px] sm:pt-[40px];
+    @apply py-10 md:py-14 lg:py-20;
   }
   .button__hover {
     @apply bg-[#077a8c] hover:bg-[#066978] transition-colors duration-200;
   }
   .section__title {
-    @apply text-[40px] font-bold leading-tight tracking-tight text-slate-900 md:text-3xl sm:text-2xl;
+    @apply text-2xl font-bold leading-tight tracking-tight text-slate-900 sm:text-3xl lg:text-[40px];
   }
 
   /* Interactive Category Tabs */
