@@ -356,11 +356,11 @@ function initCourses() {
     gridContainer.innerHTML = filtered
       .map(
         (course) => `
-        <article class="group flex flex-col justify-between overflow-hidden rounded-2xl bg-white border border-slate-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_16px_32px_-8px_rgba(7,122,140,0.12)]">
+        <article class="group flex flex-col justify-between overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-sm transition-[border-color,box-shadow] duration-200 hover:border-emerald-600/40 hover:shadow-md">
           <div>
             <div class="relative overflow-hidden bg-slate-100 aspect-[277/204]">
               <img
-                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                class="h-full w-full object-cover"
                 src="${course.image}"
                 alt="${course.title}"
                 width="277"
@@ -373,7 +373,7 @@ function initCourses() {
               </span>
               ${
                 course.badge
-                  ? `<span class="absolute top-3 right-3 rounded-md bg-[#077a8c] px-2.5 py-1 text-[11px] font-semibold text-white shadow-sm">
+                  ? `<span class="absolute top-3 right-3 rounded-md bg-emerald-600 px-2.5 py-1 text-[11px] font-semibold text-white shadow-sm">
                       ${course.badge}
                     </span>`
                   : ''
@@ -393,7 +393,7 @@ function initCourses() {
                 </span>
               </div>
 
-              <h3 class="mt-3 text-base font-bold leading-snug text-slate-900 group-hover:text-[#077a8c] transition-colors line-clamp-2 min-h-[46px]">
+              <h3 class="mt-3 text-base font-bold leading-snug text-slate-900 transition-colors duration-200 group-hover:text-emerald-700 line-clamp-2 min-h-[46px]">
                 ${course.title}
               </h3>
 
@@ -415,7 +415,7 @@ function initCourses() {
                   type="button"
                   data-action="preview"
                   data-id="${course.id}"
-                  class="btn-shine inline-flex items-center justify-center rounded-xl border border-slate-200 bg-slate-50/80 px-3.5 py-2 text-xs font-semibold text-slate-700 shadow-sm transition-all hover:border-slate-300 hover:bg-white hover:text-slate-900 active:scale-95"
+                  class="btn-shine inline-flex items-center justify-center rounded-xl border border-slate-200 bg-slate-50/80 px-3.5 py-2 text-xs font-semibold text-slate-700 shadow-sm transition-colors hover:border-slate-300 hover:bg-white hover:text-slate-900 active:scale-95"
                   aria-label="Preview course ${course.title}"
                 >
                   Preview
@@ -424,7 +424,7 @@ function initCourses() {
                   type="button"
                   data-action="enroll"
                   data-id="${course.id}"
-                  class="btn-shine inline-flex items-center justify-center rounded-xl bg-emerald-600 px-4 py-2 text-xs font-bold text-white shadow-md shadow-emerald-600/20 transition-all hover:bg-emerald-700 hover:shadow-emerald-600/30 hover:scale-[1.02] active:scale-95"
+                  class="btn-shine inline-flex items-center justify-center rounded-xl bg-emerald-600 px-4 py-2 text-xs font-bold text-white shadow-md shadow-emerald-600/20 transition-all hover:bg-emerald-700 hover:shadow-emerald-600/30 active:scale-95"
                   aria-label="Enroll in course ${course.title}"
                 >
                   Enroll
@@ -509,7 +509,7 @@ function openCourseModal(course) {
       .map(
         (item, idx) => `
         <li class="flex items-start gap-2.5 text-sm text-slate-600">
-          <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-teal-50 text-[11px] font-bold text-[#077a8c] mt-0.5">
+          <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-[11px] font-bold text-emerald-700 mt-0.5">
             ${idx + 1}
           </span>
           <span>${item}</span>
@@ -616,7 +616,7 @@ function updateCartUI() {
         <div class="flex-1 min-w-0">
           <h4 class="text-xs font-semibold text-slate-900 truncate">${item.title}</h4>
           <p class="text-[11px] text-slate-500">${item.instructor} • ${item.hours}</p>
-          <span class="text-xs font-bold text-[#077a8c]">$${item.price.toFixed(2)}</span>
+          <span class="text-xs font-bold text-emerald-700">$${item.price.toFixed(2)}</span>
         </div>
         <button
           type="button"
