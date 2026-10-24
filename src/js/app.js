@@ -1,5 +1,3 @@
-// Edufree Academy - Interactive Client Application
-
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initStickyHeader();
@@ -165,7 +163,7 @@ const COURSES_DATA = [
       'Craft high-performance, mobile-first layouts without touching legacy CSS. Learn custom theme plugins, arbitrary properties, container queries, and keyframe motion.',
     syllabus: [
       'Tailwind CSS v3 architecture and configuration',
-      'Mobile-first responsive design patterns & flex/grid mastery',
+      'Mobile-first responsive design patterns with flexbox and grid',
       'Micro-animations, dark mode & custom design tokens',
       'Production optimization, purging & Core Web Vitals',
     ],
@@ -478,7 +476,7 @@ function initCourses() {
   render();
 }
 
-// Course Quick View Modal (HTML <dialog> with modern light-dismiss standard)
+// Course modal dialog
 function openCourseModal(course) {
   const dialog = document.querySelector('#course-modal');
   if (!dialog) return;
@@ -530,7 +528,7 @@ function openCourseModal(course) {
 
   dialog.showModal();
 
-  // Modern Web Guidance fallback for light-dismiss on browsers lacking closedby support
+  // Backdrop click fallback
   if (!('closedBy' in HTMLDialogElement.prototype) && !dialog._hasLightDismissFallback) {
     dialog._hasLightDismissFallback = true;
     dialog.addEventListener('click', (event) => {
