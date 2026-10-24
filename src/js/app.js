@@ -334,8 +334,11 @@ function initCourses() {
           </div>
           <h3 class="text-xl font-semibold text-slate-800">No matching courses found</h3>
           <p class="mt-2 text-sm text-slate-500">Try adjusting your search query or switching to another category tab.</p>
-          <button id="reset-filter-btn" class="mt-5 inline-flex items-center rounded-lg bg-[#077a8c] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#066978]">
-            Reset filters
+          <button id="reset-filter-btn" class="btn-shine mt-5 inline-flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-teal-600 to-cyan-600 px-5 py-2.5 text-xs font-bold text-white shadow-md shadow-cyan-600/20 transition-all hover:scale-[1.02] active:scale-95">
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+            </svg>
+            <span>Reset filters</span>
           </button>
         </div>
       `;
@@ -416,19 +419,26 @@ function initCourses() {
                   type="button"
                   data-action="preview"
                   data-id="${course.id}"
-                  class="rounded-lg border border-slate-200 px-3 py-1.5 text-xs font-semibold text-slate-700 transition-colors hover:border-[#077a8c] hover:text-[#077a8c]"
+                  class="btn-shine inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-slate-50/80 px-3 py-2 text-xs font-semibold text-slate-700 shadow-sm transition-all hover:border-slate-300 hover:bg-white hover:text-slate-900 active:scale-95"
                   aria-label="Preview course ${course.title}"
                 >
-                  Preview
+                  <svg class="h-3.5 w-3.5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                  </svg>
+                  <span>Preview</span>
                 </button>
                 <button
                   type="button"
                   data-action="enroll"
                   data-id="${course.id}"
-                  class="rounded-lg bg-[#077a8c] px-3.5 py-1.5 text-xs font-semibold text-white shadow-sm transition-all hover:bg-[#066978] active:scale-95"
+                  class="btn-shine inline-flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-teal-600 via-cyan-600 to-sky-600 px-4 py-2 text-xs font-bold text-white shadow-md shadow-cyan-600/20 transition-all hover:shadow-lg hover:shadow-cyan-600/30 hover:scale-[1.02] active:scale-95"
                   aria-label="Enroll in course ${course.title}"
                 >
-                  Enroll
+                  <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                  </svg>
+                  <span>Enroll</span>
                 </button>
               </div>
             </div>
