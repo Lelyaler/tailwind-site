@@ -16,7 +16,7 @@ module.exports = {
       },
       backgroundImage: {
         heroGradient:
-          "linear-gradient(90deg, #fddfa5,#c7d99a,#8ccfa2,#4ec1b6,#0bafc8)",
+          "linear-gradient(135deg, #0f172a 0%, #1e1b4b 25%, #1e3a8a 55%, #0284c7 82%, #06b6d4 100%)",
       },
       colors: {
         blueviolet: "#077a8c",
