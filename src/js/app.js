@@ -74,7 +74,7 @@ function initStickyHeader() {
       headerWrapper.style.backdropFilter = 'blur(16px)';
       headerWrapper.style.webkitBackdropFilter = 'blur(16px)';
       headerWrapper.style.boxShadow = '0 4px 20px -2px rgba(0, 0, 0, 0.28)';
-      headerWrapper.style.borderBottom = '1px solid rgba(255, 255, 255, 0.15)';
+      headerWrapper.style.borderBottom = 'none';
       headerWrapper.style.paddingTop = '0.75rem';
       headerWrapper.style.paddingBottom = '0.75rem';
     } else {
