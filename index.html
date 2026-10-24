@@ -18,9 +18,9 @@
     <link
       rel="preload"
       as="image"
-      href="./src/assets/Saly-10.webp"
-      imagesrcset="./src/assets/Saly-10-mobile.webp 400w, ./src/assets/Saly-10.webp 800w"
-      imagesizes="(max-width: 768px) 100vw, 600px"
+      href="./src/assets/hero-banner.webp"
+      imagesrcset="./src/assets/hero-banner-mobile.webp 688w, ./src/assets/hero-banner.webp 1376w"
+      imagesizes="(max-width: 768px) 100vw, 680px"
       fetchpriority="high"
     />
     <link
@@ -53,7 +53,7 @@
         class="sticky top-0 z-40 pt-[35px] transition-all duration-300"
       >
         <div
-          class="mx-auto flex max-w-[1336px] items-center justify-between px-5"
+          class="mx-auto flex max-w-[1440px] items-center justify-between px-6 lg:px-5"
         >
           <!-- Logo -->
           <a
@@ -236,9 +236,9 @@
 
       <!-- Hero Content -->
       <div
-        class="mx-auto grid max-w-[1250px] grid-cols-2 items-center pb-[100px] pt-16 lg:pt-12 md:grid-cols-1 md:pb-[70px] md:text-center xs:pt-8"
+        class="mx-auto grid max-w-[1440px] grid-cols-2 items-center gap-12 px-6 pb-[100px] pt-16 lg:grid-cols-1 lg:gap-10 lg:px-5 lg:pt-12 md:pb-[70px] md:text-center xs:pt-8"
       >
-        <div class="px-5">
+        <div class="max-w-[640px] md:mx-auto">
           <div
             class="mb-4 inline-flex items-center gap-2 rounded-full bg-white/20 px-3.5 py-1 text-xs font-semibold text-white shadow-sm backdrop-blur-sm"
           >
@@ -249,13 +249,13 @@
           </div>
 
           <h1
-            class="text-[56px] font-extrabold leading-[1.1] text-white lg:text-[44px] sm:text-[36px] xs:text-[28px]"
+            class="text-[58px] font-extrabold leading-[1.08] text-white lg:text-[46px] sm:text-[36px] xs:text-[28px]"
           >
             Upgrade YOUR skills for a better future
           </h1>
 
           <p
-            class="mt-5 max-w-[520px] text-[19px] leading-relaxed text-white/90 md:mx-auto sm:text-[16px]"
+            class="mt-5 text-[19px] leading-relaxed text-white/90 sm:text-[16px]"
           >
             Practical tech and design courses taught by verified industry leads.
             Master modern frontend, UI/UX systems, growth marketing, and cloud
@@ -306,27 +306,92 @@
           </div>
         </div>
 
-        <div class="px-5">
-          <img
-            class="mt-6 drop-shadow-2xl md:mx-auto sm:h-auto sm:w-full sm:max-w-full"
-            srcset="
-              ./src/assets/Saly-10-mobile.webp 400w,
-              ./src/assets/Saly-10.webp        800w
-            "
-            sizes="(max-width: 768px) 100vw, 600px"
-            src="./src/assets/Saly-10.webp"
-            alt="Student upgrading skills illustration"
-            width="600"
-            height="338"
-            fetchpriority="high"
-          />
+        <div class="px-2">
+          <div class="relative mx-auto max-w-[680px]">
+            <!-- Main Hero Visual Frame -->
+            <div
+              class="relative overflow-hidden rounded-3xl border-2 border-white/30 bg-white/10 p-2 shadow-2xl backdrop-blur-md"
+            >
+              <img
+                class="h-auto w-full rounded-2xl object-cover shadow-inner transition-transform duration-700 hover:scale-[1.02]"
+                srcset="
+                  ./src/assets/hero-banner-mobile.webp  688w,
+                  ./src/assets/hero-banner.webp        1376w
+                "
+                sizes="(max-width: 768px) 100vw, 680px"
+                src="./src/assets/hero-banner.webp"
+                alt="Edufree Interactive Learning Workspace"
+                width="1376"
+                height="768"
+                fetchpriority="high"
+              />
+            </div>
+
+            <!-- Floating Badge 1: Top Right -->
+            <div
+              class="absolute -right-3 -top-3 rounded-2xl border border-white/40 bg-white/95 p-3 shadow-xl backdrop-blur-md md:hidden"
+            >
+              <div class="flex items-center gap-2.5">
+                <span
+                  class="flex h-9 w-9 items-center justify-center rounded-xl bg-teal-50 text-[#077a8c]"
+                >
+                  <svg
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <p class="text-xs font-bold text-slate-900">
+                    Verified Skills
+                  </p>
+                  <p class="text-[10px] text-slate-500">
+                    Industry-Recognized Certs
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2: Bottom Left -->
+            <div
+              class="absolute -bottom-4 -left-3 rounded-2xl border border-white/40 bg-white/95 p-3 shadow-xl backdrop-blur-md md:hidden"
+            >
+              <div class="flex items-center gap-2.5">
+                <span
+                  class="flex h-9 w-9 items-center justify-center rounded-xl bg-amber-50 text-amber-600"
+                >
+                  <svg class="h-5 w-5 fill-amber-400" viewBox="0 0 20 20">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <p class="text-xs font-bold text-slate-900">
+                    Interactive Labs
+                  </p>
+                  <p class="text-[10px] text-slate-500">
+                    Real-time Code Sandboxes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Courses Catalog Section -->
     <section id="courses" class="padding__block">
-      <div class="mx-auto max-w-[1200px] px-5">
+      <div class="mx-auto max-w-[1440px] px-6 lg:px-5">
         <div class="flex flex-col md:items-center md:text-center">
           <span
             class="text-xs font-bold uppercase tracking-wider text-[#077a8c]"
@@ -444,7 +509,7 @@
       id="platform"
       class="padding__block border-y border-slate-200/60 bg-slate-50/70"
     >
-      <div class="mx-auto max-w-[1144px] px-5">
+      <div class="mx-auto max-w-[1440px] px-6 lg:px-5">
         <!-- Feature 1 -->
         <div
           class="mb-[80px] grid grid-cols-2 items-center gap-[90px] md:gap-10 sm:grid-cols-1"
@@ -583,8 +648,8 @@
 
     <!-- Services / Key Advantages Grid -->
     <section id="features" class="padding__block">
-      <div class="mx-auto max-w-[1100px] px-5">
-        <div class="mx-auto max-w-[650px] text-center">
+      <div class="mx-auto max-w-[1440px] px-6 lg:px-5">
+        <div class="mx-auto max-w-[700px] text-center">
           <span
             class="text-xs font-bold uppercase tracking-wider text-[#077a8c]"
             >The Edufree Advantage</span
@@ -787,7 +852,7 @@
       id="faq"
       class="padding__block border-t border-slate-200/60 bg-slate-50/60"
     >
-      <div class="mx-auto max-w-[860px] px-5">
+      <div class="mx-auto max-w-[980px] px-6 lg:px-5">
         <div class="text-center">
           <span
             class="text-xs font-bold uppercase tracking-wider text-[#077a8c]"
@@ -1009,7 +1074,7 @@
     <!-- Articles Grid -->
     <section id="articles" class="pb-20">
       <div
-        class="mx-auto -mt-[140px] grid max-w-[1050px] grid-cols-3 gap-6 px-5 md:grid-cols-2 sm:grid-cols-1"
+        class="mx-auto -mt-[140px] grid max-w-[1440px] grid-cols-3 gap-7 px-6 lg:px-5 md:grid-cols-2 sm:grid-cols-1"
       >
         <!-- Article 1 -->
         <article
@@ -1142,14 +1207,14 @@
 
     <!-- Company and Partners Section -->
     <section class="padding__block border-t border-slate-200/60">
-      <div class="mx-auto max-w-[1100px] px-5">
+      <div class="mx-auto max-w-[1440px] px-6 lg:px-5">
         <h2
           class="text-center text-sm font-bold uppercase tracking-wider text-slate-400"
         >
           Graduates Hired by Innovative Tech Teams
         </h2>
         <div
-          class="mt-10 flex flex-wrap items-center justify-center gap-12 opacity-70 grayscale transition-all hover:grayscale-0 sm:gap-8"
+          class="mt-10 flex flex-wrap items-center justify-center gap-14 opacity-70 grayscale transition-all hover:grayscale-0 sm:gap-8"
         >
           <span class="text-xl font-bold tracking-tight text-slate-700"
             >Microsoft</span
@@ -1179,7 +1244,7 @@
       class="padding__block border-t border-slate-200/60 bg-slate-50/70"
     >
       <div
-        class="mx-auto grid max-w-[1060px] grid-cols-2 items-center gap-10 px-5 sm:grid-cols-1 sm:gap-8"
+        class="mx-auto grid max-w-[1360px] grid-cols-2 items-center gap-12 px-6 lg:px-5 sm:grid-cols-1 sm:gap-8"
       >
         <div class="md:flex md:justify-center">
           <img
@@ -1228,8 +1293,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-950 px-5 pb-12 pt-16 text-slate-400">
-      <div class="mx-auto max-w-[1160px]">
+    <footer class="bg-slate-950 px-6 pb-12 pt-16 text-slate-400 lg:px-5">
+      <div class="mx-auto max-w-[1440px]">
         <div class="grid grid-cols-4 gap-10 md:grid-cols-2 sm:grid-cols-1">
           <!-- Col 1 -->
           <div>
