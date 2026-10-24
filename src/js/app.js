@@ -67,29 +67,32 @@ function initStickyHeader() {
   const headerWrapper = document.querySelector('#site-header');
   if (!headerWrapper) return;
 
-  window.addEventListener(
-    'scroll',
-    () => {
-      if (window.scrollY > 40) {
-        headerWrapper.classList.add(
-          'backdrop-blur-md',
-          'bg-slate-900/80',
-          'shadow-lg',
-          'py-3',
-        );
-        headerWrapper.classList.remove('py-5', 'pt-[35px]');
-      } else {
-        headerWrapper.classList.remove(
-          'backdrop-blur-md',
-          'bg-slate-900/80',
-          'shadow-lg',
-          'py-3',
-        );
-        headerWrapper.classList.add('pt-[35px]');
-      }
-    },
-    { passive: true },
-  );
+  function update() {
+    if (window.scrollY > 25) {
+      headerWrapper.classList.add(
+        'backdrop-blur-xl',
+        'bg-slate-950/85',
+        'shadow-md',
+        'border-b',
+        'border-white/10',
+        'py-3.5',
+      );
+      headerWrapper.classList.remove('py-5');
+    } else {
+      headerWrapper.classList.remove(
+        'backdrop-blur-xl',
+        'bg-slate-950/85',
+        'shadow-md',
+        'border-b',
+        'border-white/10',
+        'py-3.5',
+      );
+      headerWrapper.classList.add('py-5');
+    }
+  }
+
+  window.addEventListener('scroll', update, { passive: true });
+  update();
 }
 
 // Course Catalog Data
